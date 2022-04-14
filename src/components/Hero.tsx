@@ -18,7 +18,7 @@ import { FormEvent, ChangeEvent, useState } from "react";
 
 import { init, send } from "emailjs-com";
 
-init("l2cNnJYpEYeatm-L3");
+init("pXLToiKJidusdQrMc");
 
 export default function Hero() {
   const [state, setState] = useState<"initial" | "submitting" | "success">(
@@ -83,7 +83,7 @@ export default function Hero() {
               console.log("EMail", Email);
               // promise with then and catch
 
-              send("service_3rcb66l", "template_zdbh9hw", {
+              send("yandex_co_respct", "template_4730h44", {
                 message: Email,
               })
                 .then((res) => {
