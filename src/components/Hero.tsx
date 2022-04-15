@@ -83,7 +83,7 @@ export default function Hero() {
               console.log("EMail", Email);
               // promise with then and catch
 
-              send("yandex_co_respct", "template_4730h44", {
+              send("service_co_respct", "template_co_respct", {
                 message: Email,
               })
                 .then((res) => {
