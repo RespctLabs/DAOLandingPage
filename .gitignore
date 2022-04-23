@@ -40,3 +40,5 @@ yarn-error.log*
 .layer0
 # Layer0 generated build directory
 .layer0
+
+/.yarn.lock
