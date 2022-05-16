@@ -17,8 +17,8 @@ export const Footer = () => {
           spacing={4}
           justify={{ base: 'center', md: 'space-between' }}
           align={{ base: 'center', md: 'center' }}>
-          <Img src={isDark ? '/Respct_d.png' : '/Respct.png'} height={12} my={1} mx={2} />
-          <Text>© 2022 Respct. All rights reserved</Text>
+          <Img src='respct.png' height={6} my={1} mx={2} />
+          <Text>© 2022 Gamut Inc. All rights reserved</Text>
           <Stack direction={'row'} spacing={1}>
             <Link href="https://twitter.com/respctclub" isExternal>
               <IconButton variant="ghost" aria-label="Twitter" icon={<FaTwitter />} />

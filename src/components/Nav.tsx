@@ -31,7 +31,7 @@ export const Nav = () => {
     <>
       <Box  px={4} width="100%">
         <Flex h={16} alignItems={'center'} justifyContent={'space-between'}>
-          <Box><Img src={isDark?'/Respct_d.png':'/Respct.png'} height={12} my={1} mx={2}/></Box>
+          <Box><Img src='respct.png' height={8} my={1} mx={2}/></Box>
 
           <Flex alignItems={'center'}>
             <Stack direction={'row'} spacing={7}>
