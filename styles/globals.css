@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #1a1c20;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.blueTxt {
+  background: linear-gradient(270.31deg, #11a6c2 62.59%, #25394b 128.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.purpleTxt {
+  background: linear-gradient(96.24deg, #603ca5 5.82%, #784fc4 88.9%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.blackGlow {
+  background: rgba(26, 28, 32, 0.2);
+  box-shadow: -12px -10px 21px rgba(60, 60, 60, 0.25), 10px 19px 28px #0f1012;
+}
+
+.gradient-heading {
+  background: linear-gradient(270.31deg, #11a6c2 62.59%, #25394b 128.22%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.gradient-text {
+  background: linear-gradient(94.42deg, #03afd0 23.07%, #04afd0 87.62%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.text-shadow {
+  text-shadow: 0 0 3px #f0f0f1, 0 0 5px #000;
+  color: #1a1c20;
+}
+
+.text-shadow-white {
+  text-shadow: 0 0 3px #fff;
+  color: #1a1c20;
+}
+
+.bottom-overflow-fade {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 1%, transparent 100%);
+}
+
+.top-overflow-fade {
+  mask-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 1%, transparent 100%);
+}
+
+.left-overflow-fade {
+  mask-image: linear-gradient(to left, rgba(0, 0, 0, 0.8) 1%, transparent 100%);
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.vertical-lr {
+  text-orientation: mixed;
+  writing-mode: vertical-lr;
+}
