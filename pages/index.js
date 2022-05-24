@@ -64,7 +64,7 @@ const EmailWaitlist = () => (
       className="bg-transparent border border-[#03AFD0] rounded-3xl px-4 py-2 w-full md:w-4/5 outline-none"
     /> */}
 
-<button className="bg-[#03AFD0] hover:bg-[#03AFD0]/90 cursor-pointer text-white font-bold py-2 px-4 rounded-xl shadow-lg shadow-[#03afd057] w-fit my-5" data-tally-open="3lbqpo" data-tally-layout="modal" data-tally-auto-close="0">Partner with us</button>
+<button className="bg-[#03AFD0] hover:bg-[#03AFD0]/90 cursor-pointer text-white font-bold py-2 px-4 rounded-xl shadow-lg shadow-[#03afd057] w-fit my-5" data-tally-open="3lbqpo" data-tally-layout="modal" data-tally-auto-close="0">Early Access</button>
 
 
     {/* <button className="bg-[#03AFD0] hover:bg-[#03AFD0]/90 cursor-pointer text-white font-bold py-2 px-4 rounded-xl shadow-lg shadow-[#03afd057] w-fit my-5" >
