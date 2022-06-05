@@ -6377,6 +6377,11 @@ react-merge-refs@^1.1.0:
   resolved "https://registry.yarnpkg.com/react-merge-refs/-/react-merge-refs-1.1.0.tgz#73d88b892c6c68cbb7a66e0800faa374f4c38b06"
   integrity sha512-alTKsjEL0dKH/ru1Iyn7vliS2QRcBp9zZPGoWxUOvRGWPUYgjo+V01is7p04It6KhgrzhJGnIj9GgX8W4bZoCQ==
 
+react-scroll-motion@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/react-scroll-motion/-/react-scroll-motion-0.2.6.tgz#6aa50b889fef54cc28152a79447642ca4a94e019"
+  integrity sha512-KoUgStvnolIdMkVmEa8Q+DY2hxBQtVD1mhRReOfNMCEiHVIEyg73ib/gt5ktJZhEC11eIYALWJON2/A8OZz+DQ==
+
 react@17.0.2:
   version "17.0.2"
   resolved "https://registry.yarnpkg.com/react/-/react-17.0.2.tgz#d0b5cc516d29eb3eee383f75b62864cfb6800037"
