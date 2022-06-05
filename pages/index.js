@@ -10,7 +10,7 @@ function Index() {
 	console.log({ "process?.title": process?.title });
 	return (
 		<>
-			{process?.title === "browser" && (
+			{typeof window !== "undefined" && (
 				<ScrollContainer>
 					<NavBar />
 					<ScrollPage page="0">

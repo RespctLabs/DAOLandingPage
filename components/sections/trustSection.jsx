@@ -32,7 +32,8 @@ function trustSection() {
 					We are a decentralized autonomous organization on a mission to
 					revolutionize gaming.
 					<br />
-					Let's build the metaverse by empowering people to be a part of it.
+					Let&apos;s build the metaverse by empowering people to be a part of
+					it.
 				</p>
 				<div id="btn">Early Access</div>
 				<img
