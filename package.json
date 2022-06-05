@@ -12,22 +12,11 @@
 	"version": "0.1.0",
 	"private": true,
 	"dependencies": {
-		"@fseehawer/react-circular-slider": "^2.5.0",
-		"@layer0/rum": "^3.0.0",
 		"next": "12.1.0",
-		"next-auth": "^4.3.4",
 		"react": "17.0.2",
-		"react-dom": "17.0.2",
-		"react-icons": "^4.3.1",
-		"swiper": "^8.1.5"
+		"react-dom": "17.0.2"
 	},
 	"devDependencies": {
-		"@layer0/cli": "^4.13.10",
-		"@layer0/core": "^4.13.10",
-		"@layer0/devtools": "^4.13.10",
-		"@layer0/next": "^4.13.10",
-		"@layer0/prefetch": "^4.13.10",
-		"@layer0/react": "^4.13.10",
 		"autoprefixer": "^10.4.2",
 		"eslint": "8.10.0",
 		"eslint-config-next": "12.1.0",
