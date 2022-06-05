@@ -1,53 +1,37 @@
+import Image from "next/image";
 import React from "react";
 
 export default function Footer() {
 	return (
-		<>
-			<style jsx>{`
-				#footer {
-					position: absolute;
-					display: flex;
-					align-items: center;
-					flex-direction: column;
-					justify-content: center;
-					height: 50vh;
-					width: 100%;
-					background-color: #151f2c;
-					z-index: 100;
-				}
-
-				#icons {
-					position: absolute;
-					border-radius: 10em;
-					padding: 3em;
-					top: -10vh;
-					background: #212a37;
-					display: flex;
-					align-items: center;
-				}
-			`}</style>
-			<div id="footer">
-				<div id="icons">
-					<img src={"/images/twitter.png"} />
-					<img src={"/images/insta.png"} style={{ marginLeft: "5em" }} />
-					<img src={"/images/linkedin.png"} style={{ marginLeft: "5em" }} />
-					<img src={"/images/facebook.png"} style={{ marginLeft: "5em" }} />
-				</div>
-				<p id="titleColor" size="2vw">
-					Reach out to Us
-				</p>
-				<div
-					id="descp"
-					style={{
-						border: "2px solid #03AFD0",
-						borderRadius: "10em",
-						padding: "1em",
-						width: "20%",
-					}}
-				>
-					Enter your email address{" "}
-				</div>
+		<div className="absolute flex h-80 items-center flex-col w-full z-20 justify-between bg-[#151f2c]">
+			<div className="absolute -top-12 bg-slate-600 p-4 flex justify-between w-96  flex-row rounded-2xl ">
+				<Image
+					src={"/images/twitter.png"}
+					height={50}
+					width={50}
+					alt={"twitter"}
+				/>
+				<Image src={"/images/insta.png"} height={50} width={50} alt={"insta"} />
+				<Image
+					src={"/images/linkedin.png"}
+					height={50}
+					width={50}
+					alt={"linkedin"}
+				/>
+				<Image
+					src={"/images/facebook.png"}
+					height={50}
+					width={50}
+					alt={"facebook"}
+				/>
 			</div>
-		</>
+			<p className="font-extrabold text-center text-7xl mt-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
+				Reach out to Us
+			</p>
+			<input
+				className=" text-center text-xs my-8 border border-cyan-500 rounded-2xl p-3 bg-black"
+				placeholder="Enter your email address"
+			/>
+		</div>
 	);
 }
