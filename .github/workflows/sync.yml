@@ -1,4 +1,6 @@
 # .github/workflows/git-sync.yml
+name: canvasartist sync
+
 on:
   push:
     branches:

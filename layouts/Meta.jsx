@@ -43,7 +43,7 @@ const Meta = ({ title, keywords, description, url, image }) => {
 };
 
 Meta.defaultProps = {
-	title: "Game Guild | Respct",
+	title: "Respct",
 	keywords: "respct, creators, artists",
 	description: "",
 	url: "https://respct.fun/",
