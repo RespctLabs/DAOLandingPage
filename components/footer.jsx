@@ -1,25 +1,53 @@
-import React, { Component } from 'react'
-import '../styles/landing.css'
-import '../styles/footer.css'
+import React from "react";
 
-import twitter from '../images/twitter.png'
-import insta from '../images/insta.png'
-import facebook from '../images/facebook.png'
-import linkedin from '../images/linkedin.png'
+export default function Footer() {
+	return (
+		<>
+			<style jsx>{`
+				#footer {
+					position: absolute;
+					display: flex;
+					align-items: center;
+					flex-direction: column;
+					justify-content: center;
+					height: 50vh;
+					width: 100%;
+					background-color: #151f2c;
+					z-index: 100;
+				}
 
-export default class footer extends Component {
-  render() {
-    return (
-        <div id='footer'>
-          <div id='icons'>
-            <img src={twitter}/>
-            <img src={insta} style={{marginLeft:'5em'}}/>
-            <img src={linkedin} style={{marginLeft:'5em'}}/>
-            <img src={facebook} style={{marginLeft:'5em'}}/>
-          </div>
-          <p id='titleColor' size='2vw'>Reach out to Us</p>
-          <div id='descp' style={{border: '2px solid #03AFD0', borderRadius:'10em', padding: '1em', width: '20%'}}>Enter your email address </div>
-        </div>
-    )
-  }
+				#icons {
+					position: absolute;
+					border-radius: 10em;
+					padding: 3em;
+					top: -10vh;
+					background: #212a37;
+					display: flex;
+					align-items: center;
+				}
+			`}</style>
+			<div id="footer">
+				<div id="icons">
+					<img src={"/images/twitter.png"} />
+					<img src={"/images/insta.png"} style={{ marginLeft: "5em" }} />
+					<img src={"/images/linkedin.png"} style={{ marginLeft: "5em" }} />
+					<img src={"/images/facebook.png"} style={{ marginLeft: "5em" }} />
+				</div>
+				<p id="titleColor" size="2vw">
+					Reach out to Us
+				</p>
+				<div
+					id="descp"
+					style={{
+						border: "2px solid #03AFD0",
+						borderRadius: "10em",
+						padding: "1em",
+						width: "20%",
+					}}
+				>
+					Enter your email address{" "}
+				</div>
+			</div>
+		</>
+	);
 }
