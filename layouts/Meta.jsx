@@ -12,7 +12,7 @@ const Meta = ({ title, keywords, description, url, image }) => {
 				<meta name="apple-mobile-web-app-status-bar-style" content="default" />
 				<meta name="mobile-web-app-capable" content="yes" />
 				<meta name="language" content="English" />
-				<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+				<meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
 
 				<title>{title}</title>
 				<meta name="title" content={title} />
