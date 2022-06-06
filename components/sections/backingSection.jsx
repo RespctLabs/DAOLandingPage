@@ -5,11 +5,11 @@ function Backing() {
 			<div id="backingImage" />
 			<div id="backingBody">
 				<div id="backingContent">
-					<h class="backingTitle">
+					<h className="backingTitle">
 						Backed by the
 						
 					</h>
-					<h class="backingTitle" id="bt">Giants</h>
+					<h className="backingTitle" id="bt">Giants</h>
 					<p id="backingDescp">
 						Respct is a creator token platform where you
 						<br />
