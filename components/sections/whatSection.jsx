@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React, { useState } from "react";
+import { Parallax } from "react-scroll-parallax";
 
 function What() {
 	const [value, setValue] = useState(0);
@@ -20,8 +21,8 @@ function What() {
 			head2: "Quest",
 			desc: "Easy yet engaging game quests that help gamers understand the game better. Get your hands on the deck",
 			img: "/images/el.png",
-			height: 300,
-			width: 300,
+			height: 400,
+			width: 350,
 		},
 		{
 			id: 3,
@@ -35,26 +36,26 @@ function What() {
 	];
 
 	return (
-		<div className="main">
-			<div id="cont">
+		<div className="flex px-20  h-screen">
+			<div className="self-center px-20">
 				<h2>{data[value].head1}</h2>
 				<h1>{data[value].head2}</h1>
-				<div>
-					<p>{data[value].desc}</p>
+				<p>{data[value].desc}</p>
+				<div className="mt-2 text-center ">
+					<Image
+						src={data[value].img}
+						alt="respct"
+						height={data[value].height ?? 300}
+						width={data[value].width ?? 500}
+						layout="intrinsic"
+					/>
 				</div>
-				<Image
-					src={data[value].img}
-					alt="respct"
-					height={data[value].height ?? 300}
-					width={data[value].width ?? 500}
-					layout="intrinsic"
-				/>
 			</div>
 			<div className=" flex flex-col relative w-6/12 justify-center items-center p-6">
 				<Image
 					src="/images/tri.png"
 					onClick={() => setValue(0)}
-					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
+					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
 					height={100}
 					width={100}
 					alt="tri"
@@ -62,14 +63,14 @@ function What() {
 				<Image
 					src="/images/circle.png"
 					onClick={() => setValue(1)}
-					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
+					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
 					height={100}
 					width={100}
 					alt="circle"
 				/>
 				<Image
 					src="/images/square.png"
-					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
+					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
 					onClick={() => setValue(2)}
 					height={100}
 					width={100}
@@ -77,7 +78,7 @@ function What() {
 				/>
 				<Image
 					src="/images/cross.png"
-					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
+					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
 					onClick={() => setValue(0)}
 					height={100}
 					width={100}

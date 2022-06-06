@@ -1,5 +1,6 @@
 import { useRouter } from "next/router";
 import { useEffect } from "react";
+import { ParallaxProvider } from "react-scroll-parallax";
 import LayoutWrapper from "../layouts/LayoutWrapper";
 import "../styles/globals.css";
 
@@ -19,9 +20,11 @@ function MyApp({ Component, pageProps }) {
 		};
 	}, [router.events]);
 	return (
-		<LayoutWrapper {...pageProps}>
-			<Component {...pageProps} />
-		</LayoutWrapper>
+		<ParallaxProvider>
+			<LayoutWrapper {...pageProps}>
+				<Component {...pageProps} />
+			</LayoutWrapper>
+		</ParallaxProvider>
 	);
 }
 
