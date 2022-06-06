@@ -104,13 +104,13 @@ function Index() {
 				#moveLeft {
 					position: relative;
 					right: -50vw;
-					animation: moveLeft 50s infinite alternate;
+					animation: moveLeft 20s infinite alternate;
 					
 				}
 				#moveRight {
 					position: relative;
 					left: -50vw;
-					animation: moveRight 50s infinite alternate;
+					animation: moveRight 20s infinite alternate;
 					
 				}
 				@keyframes moveRight {
