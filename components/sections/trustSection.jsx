@@ -7,7 +7,6 @@ function trustSection() {
 			<div id="trustBody">
 				<div
 					id="moveLeft"
-<<<<<<< HEAD
 					style={{ width: "70%", marginTop: "5%",display: "flex" }}
 				>
 					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
@@ -20,14 +19,6 @@ function trustSection() {
 				<div style={{ display: "flex" }} className="font-bold pb-4 text-center text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
 					<span id="titleColor" style={{ marginRight: "0.3em" }}>
 						Trusted
-=======
-					src={"/images/panel.png"}
-					style={{ width: "70%", marginTop: "5%" }}
-				/>
-				<div style={{ display: "flex" }}>
-					<span id="titleColor" style={{ marginRight: "0.3em", fontSize: "1.2rem" }}>
-						Trusted by the industry
->>>>>>> 4983e396e83868b28e1b59f1b23818f6b6cec9c7
 					</span>
 					
 				</div>
