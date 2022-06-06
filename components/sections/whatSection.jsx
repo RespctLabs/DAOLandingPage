@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-function what() {
+function What() {
 	const [value, setValue] = useState(0);
 
 	const data = [
@@ -44,7 +44,7 @@ function what() {
 				</div>
 				<Image
 					src={data[value].img}
-					alt=""
+					alt="respct"
 					height={data[value].height ?? 300}
 					width={data[value].width ?? 500}
 					layout="intrinsic"
@@ -57,6 +57,7 @@ function what() {
 					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
 					height={100}
 					width={100}
+					alt="tri"
 				/>
 				<Image
 					src="/images/circle.png"
@@ -64,6 +65,7 @@ function what() {
 					className="hover:rotate-360 hover:scale-125 hover:translate-z transform duration-1000 ease-in-out"
 					height={100}
 					width={100}
+					alt="circle"
 				/>
 				<Image
 					src="/images/square.png"
@@ -71,6 +73,7 @@ function what() {
 					onClick={() => setValue(2)}
 					height={100}
 					width={100}
+					alt="square"
 				/>
 				<Image
 					src="/images/cross.png"
@@ -78,10 +81,11 @@ function what() {
 					onClick={() => setValue(0)}
 					height={100}
 					width={100}
+					alt="cross"
 				/>
 			</div>
 		</div>
 	);
 }
 
-export default what;
+export default What;
