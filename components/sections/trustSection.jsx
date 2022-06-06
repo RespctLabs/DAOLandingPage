@@ -54,15 +54,16 @@ function trustSection() {
 				>
 					Early Access
 				</button>
-				<img
+				<div
 					id="moveRight"
 					style={{ width: "70%", marginBottom: "5%", display: "flex" }}
-				/>
-				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
-				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
-				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
-				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
-				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+				>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
+				</div>
 			</div>
 		</>
 	);
