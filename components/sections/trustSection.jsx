@@ -17,7 +17,7 @@ function trustSection() {
 				</div>
 				<img
 					src={"/images/Games.png"}
-					style={{ position: "absolute", right: "2vw", top: "5vw" }}
+					style={{ position: "absolute", right: "2vw", top: "5vw", opacity:"0.8" }}
 				></img>
 				<img
 					src={"/images/Guilds.png"}
@@ -26,6 +26,7 @@ function trustSection() {
 						left: "2vw",
 						bottom: "5vw",
 						zIndex: "10",
+						opacity: "0.8"
 					}}
 				></img>
 				<p id="descp" style={{ fontSize: "1vw" }}>

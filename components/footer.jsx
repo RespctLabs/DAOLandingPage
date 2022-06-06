@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
 	return (
-		<div className="absolute flex h-80 items-center flex-col w-full z-20 justify-between bg-[#151f2c]">
+		<div className="absolute flex h-80 items-center flex-col w-full z-20 justify-between bg-[#17181e]">
 			<div className="absolute -top-12 bg-slate-600 p-4 flex justify-between w-96  flex-row rounded-2xl ">
 				<Image
 					src={"/images/twitter.png"}
