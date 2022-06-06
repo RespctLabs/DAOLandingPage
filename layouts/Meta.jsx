@@ -37,6 +37,22 @@ const Meta = ({ title, keywords, description, url, image }) => {
 				<meta property="og:description" content={description} />
 				<meta property="og:image" content={image || defaultImage} />
 				<meta property="og:site_name" content="Respct" />
+				<script
+					async
+					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+				/>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+              page_path: window.location.pathname,
+            });
+          `,
+					}}
+				/>
 			</Head>
 		</>
 	);
