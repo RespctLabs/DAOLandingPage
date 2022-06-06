@@ -12,14 +12,6 @@ function Index() {
 	return (
 		<>
 			<style global jsx>{`
-				#backingBody {
-					display: flex;
-					height: 100vh;
-					width: 100vw;
-					background-color: #151f2c;
-					overflow: hidden;
-				}
-
 				#backingContent {
 					display: flex;
 					flex-direction: column;
@@ -67,14 +59,12 @@ function Index() {
 					left: -15vw;
 					top: -15vw;
 					height: 100vh;
-					background-image: url("../images/starsBG.png");
+					background-image: url("/images/starsBG.png");
 					background-size: cover;
 					background-position: center;
-
-					mask-image: url("../images/bigF.svg");
+					mask-image: url("/images/bigF.svg");
 					mask-size: 80%;
 					mask-repeat: no-repeat;
-
 					background-position-x: 0;
 					animation: clip-fade 50s infinite alternate;
 				}
@@ -85,16 +75,6 @@ function Index() {
 					}
 				}
 
-				#trustBody {
-					display: flex;
-					align-items: center;
-					flex-direction: column;
-					justify-content: space-between;
-					height: 100vh;
-					width: 100vw;
-					background-color: #17181e;
-					overflow: hidden;
-				}
 				#movingTitle {
 					position: relative;
 					min-width: 100%;
@@ -105,13 +85,11 @@ function Index() {
 					position: relative;
 					right: 50vw;
 					animation: moveLeft 50s linear infinite;
-					
 				}
 				#moveRight {
 					position: relative;
 					left: -50vw;
 					animation: moveRight 50s linear infinite;
-					
 				}
 				@keyframes moveRight {
 					100% {
