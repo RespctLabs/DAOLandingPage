@@ -25,7 +25,7 @@ export default function Footer() {
 					alt={"facebook"}
 				/>
 			</div>
-			<p className="font-extrabold text-center text-7xl mt-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
+			<p className="font-extrabold text-center text-7xl mt-16 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800" style={{fontSize: "5rem", fontWeight:"700"}}>
 				Reach out to Us
 			</p>
 			<input
@@ -33,5 +33,6 @@ export default function Footer() {
 				placeholder="Enter your email address"
 			/>
 		</div>
+		// need to fix the icon box
 	);
 }

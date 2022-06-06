@@ -29,10 +29,10 @@ function Index() {
 					margin-left: 12%;
 					margin-top: 30%;
 				}
-				#backingTitle {
+				.backingTitle {
 					text-align: left;
-					font-weight: bold;
-					font-size: 5vw;
+					font-weight: 700;
+					font-size: 6rem;
 					background: -webkit-linear-gradient(
 						-50deg,
 						rgba(3, 174, 208, 0.112),
@@ -45,10 +45,14 @@ function Index() {
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
 					font-family: "Mulish", sans-serif;
+					
+				}
+				#bt{
+					margin-top:-5%;
 				}
 				#backingDescp {
 					text-align: left;
-					font-size: 80%;
+					font-size: 1.2rem;
 					font-family: "Mulish", sans-serif;
 					color: #c9c9c9;
 					font-weight: 200;
@@ -175,7 +179,7 @@ function Index() {
 				p{
 					color: #ADADAD;
 					margin-top: -2%;
-					font-size: 1.3rem;
+					font-size: 1.2rem;
 					font-weight: 300;
 				}
 				.main{
@@ -207,6 +211,17 @@ function Index() {
 				   
 		
 				}
+				#introtxt{
+					font-size: 1.2rem;
+					width:50%;
+					line-height: 25px;
+					
+					
+				}
+				#mainI{
+					height: 100%;
+				}
+				
 				
 				.resize{
 					width:80%;
@@ -229,6 +244,7 @@ function Index() {
 					opacity: 0;
 		
 				}
+				
 				.main{
 					overflow: hidden;
 					box-sizing: border-box;

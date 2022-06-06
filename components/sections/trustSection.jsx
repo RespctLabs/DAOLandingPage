@@ -10,10 +10,10 @@ function trustSection() {
 					style={{ width: "70%", marginTop: "5%" }}
 				/>
 				<div style={{ display: "flex" }}>
-					<span id="titleColor" style={{ marginRight: "0.3em" }}>
-						Trusted
+					<span id="titleColor" style={{ marginRight: "0.3em", fontSize: "1.2rem" }}>
+						Trusted by the industry
 					</span>
-					<span id="title">by the Industry</span>
+					
 				</div>
 				<img
 					src={"/images/Games.png"}
@@ -29,14 +29,14 @@ function trustSection() {
 						opacity: "0.8"
 					}}
 				></img>
-				<p id="descp" style={{ fontSize: "1vw" }}>
+				<p id="descp" style={{ fontSize: "1.2rem" }}>
 					We are a decentralized autonomous organization on a mission to
 					revolutionize gaming.
 					<br />
 					Let&apos;s build the metaverse by empowering people to be a part of
 					it.
 				</p>
-				<div id="btn">Early Access</div>
+				<div id="btn" style={{fontSize: "1.2rem"}}>Early Access</div>
 				<img
 					id="moveRight"
 					src={"/images/panel.png"}
