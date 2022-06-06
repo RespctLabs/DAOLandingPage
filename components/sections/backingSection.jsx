@@ -11,11 +11,11 @@ function Backing() {
 						Giants
 					</h>
 					<p id="backingDescp">
-						Respct is a creator token platform where you
+						They are not just the backers, but believers of what 
 						<br />
-						become a shareholder in the journey of your favorite
+						we do, and how we aim to change the ecosystem
 						<br />
-						creator
+						become the part of the change.
 					</p>
 				</div>
 				<div id="backings">
