@@ -103,24 +103,24 @@ function Index() {
 				}
 				#moveLeft {
 					position: relative;
-					right: -50vw;
-					animation: moveLeft 20s infinite alternate;
+					right: 50vw;
+					animation: moveLeft 50s linear infinite;
 					
 				}
 				#moveRight {
 					position: relative;
 					left: -50vw;
-					animation: moveRight 20s infinite alternate;
+					animation: moveRight 50s linear infinite;
 					
 				}
 				@keyframes moveRight {
 					100% {
-						left: 100vw;
+						left: -100vw;
 					}
 				}
 				@keyframes moveLeft {
 					100% {
-						right: 100vw;
+						right: -100vw;
 					}
 				}
 				body{

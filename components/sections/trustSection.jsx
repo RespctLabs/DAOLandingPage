@@ -1,14 +1,21 @@
 import React from "react";
 
+
 function trustSection() {
 	return (
 		<>
 			<div id="trustBody">
-				<img
+				<div
 					id="moveLeft"
-					src={"/images/panel.png"}
-					style={{ width: "70%", marginTop: "5%" }}
-				/>
+					style={{ width: "70%", marginTop: "5%",display: "flex" }}
+				>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					
+				</div>
 				<div style={{ display: "flex" }} className="font-bold pb-4 text-center text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
 					<span id="titleColor" style={{ marginRight: "0.3em" }}>
 						Trusted
@@ -37,11 +44,17 @@ function trustSection() {
 					it.
 				</p>
 				<div className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-violet-800 rounded-2xl hover:from-violet-800 hover:to-cyan-500 transform duration-200 ease-in">Early Access</div>
-				<img
+				<div
 					id="moveRight"
-					src={"/images/panel.png"}
-					style={{ width: "70%", marginBottom: "5%" }}
-				/>
+					style={{ width: "70%", marginBottom: "5%",display: "flex"}}
+				>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					<img src={"/images/panel.png"} style={{ marginRight: "3%" }}/>
+					
+				</div>
 			</div>
 		</>
 	);
