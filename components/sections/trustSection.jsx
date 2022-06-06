@@ -36,7 +36,9 @@ function trustSection() {
 					Let&apos;s build the metaverse by empowering people to be a part of
 					it.
 				</p>
-				<div id="btn" style={{fontSize: "1.2rem"}}>Early Access</div>
+				<button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-violet-800 rounded-2xl hover:from-violet-800 hover:to-cyan-500 transform duration-200 ease-in" id="ebt">
+				Early Access
+			</button>
 				<img
 					id="moveRight"
 					src={"/images/panel.png"}
