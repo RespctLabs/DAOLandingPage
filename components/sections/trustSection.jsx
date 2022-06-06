@@ -11,9 +11,9 @@ function trustSection() {
 				/>
 				<div style={{ display: "flex" }}>
 					<span id="titleColor" style={{ marginRight: "0.3em" }}>
-						Trusted
+						Ecosystem
 					</span>
-					<span id="title">by the Industry</span>
+					<span id="title">that trusts us</span>
 				</div>
 				<img
 					src={"/images/Games.png"}
@@ -30,13 +30,14 @@ function trustSection() {
 					}}
 				></img>
 				<p id="descp" style={{ fontSize: "1vw" }}>
-					We are a decentralized autonomous organization on a mission to
-					revolutionize gaming.
+					Respct is currently working on the best games and guilds in ecosystem.
 					<br />
 					Let&apos;s build the metaverse by empowering people to be a part of
 					it.
 				</p>
-				<div id="btn">Early Access</div>
+				<button className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-violet-800 rounded-2xl hover:from-violet-800 hover:to-cyan-500 transform duration-200 ease-in">
+					Early Access
+				</button>
 				<img
 					id="moveRight"
 					src={"/images/panel.png"}

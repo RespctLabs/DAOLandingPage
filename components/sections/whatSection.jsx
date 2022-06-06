@@ -11,9 +11,9 @@ function fadeOut() {
 	// document.getElementById("ele").style.opacity = 0;
 	// document.getElementById("elem").style.transition = "opacity 0.5s linear 0s";
 	// document.getElementById("elem").style.opacity = 0;
-	document.getElementById("txt").innerHTML="Respct IDs that track gameplay data and allows players to connect multiple wallets to play any game on any chain"
-	document.getElementById("head1").innerHTML="Discovery"
-	document.getElementById("head2").innerHTML="Game"
+	document.getElementById("txt").innerHTML="One click login & your passport to any game on any chain. Access INOs, NFTs, and more from any game"
+	document.getElementById("head1").innerHTML="ID"
+	document.getElementById("head2").innerHTML="Respct"
 	document.getElementById("head1").style="background-image: linear-gradient(90deg, #03AFD0 5.2%, #812DC1 50%);"
 	document.getElementById("gamedis").src="/images/gd.png";
 	document.getElementById("gamedis").style="width: 80%";
@@ -28,7 +28,7 @@ function fadeI() {
 	// document.getElementById("ele").style.opacity = 1;
 	// document.getElementById("elem").style.transition = "opacity 0.5s linear 0s";
 	// document.getElementById("elem").style.opacity = 0;
-	document.getElementById("txt").innerHTML="Cross game NFT marketplace where guilds can lend and players can loan. Along with Initial NFT offering."
+	document.getElementById("txt").innerHTML="Cross game NFT marketplace where anyone can lend and borrow game assets. Get access to INO from early metaverse projects."
 	document.getElementById("head1").innerHTML="Marketplace"
 	document.getElementById("head2").innerHTML="NFT"
 	document.getElementById("head1").style="background-image: linear-gradient(90deg, #03AFD0 5.2%, #812DC1 50%);"
@@ -59,9 +59,9 @@ function fade() {
 
 	// document.getElementById("elem").style.transition = "opacity 1.5s linear 0s";
 	// document.getElementById("elem").style.opacity = 1;
-	document.getElementById("txt").innerHTML="Easy yet engaging game quests that help gamers understand the game better. Get your hands on the deck"
+	document.getElementById("txt").innerHTML="Easy yet engaging Missions & Challenges for players to complete and get rewarded from games & guilds"
 	document.getElementById("head1").innerHTML="Platform"
-	document.getElementById("head2").innerHTML="Quest"
+	document.getElementById("head2").innerHTML="Missions"
 	document.getElementById("head1").style="background-image: linear-gradient(90deg, #03AFD0 5.2%, #812DC1 50%);"
 	document.getElementById("gamedis").src="/images/el.png";
 	document.getElementById("gamedis").style="width: 60%";
@@ -69,9 +69,9 @@ function fade() {
 	
 }
 function fadeit(){
-	document.getElementById("txt").innerHTML="Respct IDs that track gameplay data and allows players to connect multiple wallets to play any game on any chain"
-	document.getElementById("head1").innerHTML="Id"
-	document.getElementById("head2").innerHTML="Respct"
+	document.getElementById("txt").innerHTML="Discover the trending metaverse projects and become a part of the community"
+	document.getElementById("head1").innerHTML="Discovery"
+	document.getElementById("head2").innerHTML="Game"
 	document.getElementById("head1").style="background-image: linear-gradient(90deg, #03AFD0 5.2%, #812DC1 10%);"
 	document.getElementById("gamedis").src="/images/idd.png";
 	document.getElementById("gamedis").style="width: 40%";
@@ -83,11 +83,11 @@ function what() {
 	return (
 		<div className="main">
 			<div id="cont">
-				<h2 id="head2">Game</h2>
-				<h1 id="head1">Discovery</h1>
+				<h2 id="head2">Respct</h2>
+				<h1 id="head1">ID</h1>
 				<div className="resize">
 				<p id="txt">
-					Respct IDs that track gameplay data and allows players to connect multiple wallets to play any game on any chain
+					One click login and your passport to any game on any chain. Access INOs, NFTs, and more from any game
 				</p>
 
 				</div>
