@@ -10,10 +10,10 @@ export default function NavBar() {
 					<p>Testnet</p>
 				</div>
 				<a
-					href="https://app.respct.fun/login"
+					href="https://tally.so/r/3lbqpo"
 					className="font-bold text-[#04afd0]"
 				>
-					Login
+					Early Access
 				</a>
 			</div>
 		</div>

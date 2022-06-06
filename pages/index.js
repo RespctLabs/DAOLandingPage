@@ -7,19 +7,16 @@ import IntroSection from "../components/sections/introSection.jsx";
 import TrustSection from "../components/sections/trustSection.jsx";
 import WhatSection from "../components/sections/whatSection.jsx";
 
-
-
 function Index() {
 	console.log({ "process?.title": process?.title });
 	return (
 		<>
 			<style global jsx>{`
-				
 				#backingBody {
 					display: flex;
 					height: 100vh;
 					width: 100vw;
-					background-color: #151F2C;
+					background-color: #151f2c;
 					overflow: hidden;
 				}
 
@@ -45,10 +42,9 @@ function Index() {
 					background-clip: text;
 					-webkit-text-fill-color: transparent;
 					font-family: "Mulish", sans-serif;
-					
 				}
-				#bt{
-					margin-top:-5%;
+				#bt {
+					margin-top: -5%;
 				}
 				#backingDescp {
 					text-align: left;
@@ -127,177 +123,109 @@ function Index() {
 						right: -100vw;
 					}
 				}
-				body{
-					background-color: #151F2C;
-					font-family: 'Mulish', sans-serif;
-		
+				body {
+					background-color: #151f2c;
+					font-family: "Mulish", sans-serif;
 				}
-				#cont{
+				#cont {
 					position: relative;
 					/* display: flex; */
 					/* border: 2px solid red; */
 					/* flex-direction: column; */
 					width: 50%;
 					margin-left: 10%;
-					
 				}
-				h1{
-				   
+				h1 {
 					font-size: 6rem;
-					background-image: linear-gradient(90deg, #03AFD0 5.2%, #812DC1 50%);
+					background-image: linear-gradient(90deg, #03afd0 5.2%, #812dc1 50%);
 					background-size: 100%;
 					-webkit-background-clip: text;
 					-moz-background-clip: text;
-					-webkit-text-fill-color: transparent; 
+					-webkit-text-fill-color: transparent;
 					-moz-text-fill-color: transparent;
 					background-color: #f3ec78;
 					margin-top: -8%;
-					
-		
-					
-					
+
 					font-weight: 700;
-		
 				}
-				h2{
-				 
-					
+				h2 {
 					color: #ffffff;
 					font-size: 6rem;
-					
-				   
-					
-				   
-		
-					font-family: 'Mulish';
+
+					font-family: "Mulish";
 					font-style: normal;
 					font-weight: 700;
-				  
-				 
-				  
 				}
-				p{
-					color: #ADADAD;
+				p {
+					color: #adadad;
 					margin-top: -2%;
 					font-size: 1.2rem;
 					font-weight: 300;
 				}
-				.main{
+				.main {
 					/* border: 2px solid red; */
-					width:85%;
+					width: 85%;
 					margin: auto;
-					margin-top:4%;
+					margin-top: 4%;
 					display: flex;
 					max-width: 1500px;
 				}
-				.im{
-					width:20%;
-					-webkit-transition: -webkit-transform 1.2s;
-					margin-top: 18px;
-				   
-				}
-				.controller{
-					position: relative;
-					width:50%;
-					display: flex;
-					flex-direction: column;
-					justify-content: center;
-					align-items: center;
-				
-				}
-				.im:hover{
-					-webkit-transform: rotate(360deg) translateZ(0) scale(1.5);
-					
-				   
-		
-				}
-				#introtxt{
+
+				#introtxt {
 					font-size: 1.2rem;
-					width:50%;
+					width: 50%;
 					line-height: 25px;
-					
-					
 				}
-				#mainI{
+				#mainI {
 					height: 100%;
 				}
-				
-				
-				.resize{
-					width:80%;
+
+				.resize {
+					width: 80%;
 				}
-				#ele{
-					width:100%;
+				#ele {
+					width: 100%;
 					margin-top: -100%;
 					opacity: 0;
-		
 				}
-				#elem{
-					width:200%;
+				#elem {
+					width: 200%;
 					margin-top: -100%;
 					position: relative;
-					right:40%;
+					right: 40%;
 					bottom: 10%;
-				   
-					
-				   
+
 					opacity: 0;
-		
 				}
-				
-				.main{
+
+				.main {
 					overflow: hidden;
 					box-sizing: border-box;
-					
 				}
-				#gamedis{
-					width:80%;
-				}
+
 				@media only screen and (max-width: 1145px) {
-					.controller{
-						flex-direction: row;
-						
-					}
-					h1{
+					h1 {
 						font-size: 3rem;
 					}
-					h2{
+					h2 {
 						font-size: 2rem;
-						
 					}
-					#cont{
+					#cont {
 						max-width: 250px;
-		
 					}
 				}
-				@media only screen and (max-width: 600px) {
-					.controller{
-						flex-direction: row;
-						opacity: 0;
-						
-					}
-					
-				}
+
 				@media only screen and (max-width: 450px) {
-					.controller{
-						flex-direction: row;
-						opacity: 0;
-						
-					}
-					h1{
+					h1 {
 						font-size: 2rem;
 					}
-					h2{
+					h2 {
 						font-size: 1rem;
-		
 					}
-					p{
+					p {
 						font-size: 0.6rem;
 					}
-				
-					
 				}
-			   
 			`}</style>
 			{typeof window !== "undefined" && (
 				<ScrollContainer>
@@ -308,15 +236,13 @@ function Index() {
 					<ScrollPage page="1">
 						<WhatSection />
 					</ScrollPage>
-					
-					
+
 					<ScrollPage page="2">
 						<TrustSection />
 					</ScrollPage>
 					<ScrollPage page="3">
 						<BackingSection />
 					</ScrollPage>
-					
 
 					<Footer />
 				</ScrollContainer>
