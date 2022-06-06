@@ -49,8 +49,9 @@ function trustSection() {
 					it.
 				</p>
 				<button
+					data-tally-open="3lbqpo"
+					data-tally-layout="modal"
 					className="px-4 py-2 bg-gradient-to-r from-cyan-500 to-violet-800 rounded-2xl hover:from-violet-800 hover:to-cyan-500 transform duration-200 ease-in"
-					id="ebt"
 				>
 					Early Access
 				</button>
