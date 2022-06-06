@@ -36,20 +36,20 @@ function What() {
 	];
 
 	return (
-		<div className="flex px-20">
-			<div>
+		<div className="flex px-20  h-screen">
+			<div className="self-center px-20">
 				<h2>{data[value].head1}</h2>
 				<h1>{data[value].head2}</h1>
-				<div>
-					<p>{data[value].desc}</p>
+				<p>{data[value].desc}</p>
+				<div className="mt-2 text-center ">
+					<Image
+						src={data[value].img}
+						alt="respct"
+						height={data[value].height ?? 300}
+						width={data[value].width ?? 500}
+						layout="intrinsic"
+					/>
 				</div>
-				<Image
-					src={data[value].img}
-					alt="respct"
-					height={data[value].height ?? 300}
-					width={data[value].width ?? 500}
-					layout="intrinsic"
-				/>
 			</div>
 			<div className=" flex flex-col relative w-6/12 justify-center items-center p-6">
 				<Image
