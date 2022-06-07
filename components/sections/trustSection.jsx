@@ -19,8 +19,9 @@ function trustSection() {
 				className="font-bold pb-4 text-center text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800"
 			>
 				<span id="titleColor" style={{ marginRight: "0.3em" }}>
-					Trusted
+					Ecosystem
 				</span>
+				<span id="title">that trusts us</span>
 			</div>
 			<div className="absolute right-3 top-3 lg:right-40 lg:top-40 opacity-80">
 				<Image src={"/images/Games.png"} height="100" width="300" />
@@ -29,8 +30,7 @@ function trustSection() {
 				<Image src={"/images/Guilds.png"} height="100" width="300" />
 			</div>
 			<p style={{ fontSize: "1.2rem" }}>
-				We are a decentralized autonomous organization on a mission to
-				revolutionize gaming.
+				Respct is currently working on the best games and guilds in ecosystem.
 				<br />
 				Let&apos;s build the metaverse by empowering people to be a part of it.
 			</p>
