@@ -87,7 +87,7 @@ function What() {
 				<Image
 					src="/images/cross.png"
 					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
-					onClick={() => setValue(0)}
+					onClick={() => setValue(3)}
 					height={100}
 					width={100}
 					alt="cross"

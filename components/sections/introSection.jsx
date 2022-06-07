@@ -15,7 +15,7 @@ function IntroSection() {
 			<p className="text-center text-xs text-[#a7a7a7] my-8" id="introtxt">
 				Onboarding Games and Gamers to the Metaverse with
 				<br />
-				Respct's Ecosystem
+				Respct&apos;s Ecosystem
 			</p>
 			<button
 				data-tally-open="3lbqpo"
