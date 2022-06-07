@@ -51,7 +51,7 @@ function What() {
 	return (
 		<>
 			{data.map((item, index) => (
-				<ScrollPage page={index + 1} on>
+				<ScrollPage page={index + 1} key={index}>
 					<Animator animation={FadeUp}>
 						<div className=" md:px-20">
 							<h2 className="mb-3">{item.head1}</h2>
