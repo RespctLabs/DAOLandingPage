@@ -8,9 +8,27 @@ import TrustSection from "../components/sections/trustSection.jsx";
 import WhatSection from "../components/sections/whatSection.jsx";
 
 function Index() {
-	console.log({ "process?.title": process?.title });
 	return (
 		<>
+			{typeof window !== "undefined" && (
+				<ScrollContainer>
+					<NavBar />
+					<ScrollPage page="0">
+						<IntroSection />
+					</ScrollPage>
+
+					<WhatSection />
+
+					<ScrollPage page="5">
+						<TrustSection />
+					</ScrollPage>
+					<ScrollPage page="6">
+						<BackingSection />
+					</ScrollPage>
+
+					<Footer />
+				</ScrollContainer>
+			)}
 			<style global jsx>{`
 				#backingContent {
 					display: flex;
@@ -205,26 +223,6 @@ function Index() {
 					}
 				}
 			`}</style>
-			{typeof window !== "undefined" && (
-				<ScrollContainer>
-					<NavBar />
-					<ScrollPage page="0">
-						<IntroSection />
-					</ScrollPage>
-					<ScrollPage page="1">
-						<WhatSection />
-					</ScrollPage>
-
-					<ScrollPage page="2">
-						<TrustSection />
-					</ScrollPage>
-					<ScrollPage page="3">
-						<BackingSection />
-					</ScrollPage>
-
-					<Footer />
-				</ScrollContainer>
-			)}
 		</>
 	);
 }

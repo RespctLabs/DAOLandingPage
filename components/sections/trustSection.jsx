@@ -23,10 +23,10 @@ function trustSection() {
 				</span>
 				<span id="title">that trusts us</span>
 			</div>
-			<div className="absolute right-3 top-3 lg:right-40 lg:top-40 opacity-80">
+			<div className="absolute right-3 top-3 lg:right-40 lg:top-28 opacity-80">
 				<Image src={"/images/Games.png"} height="100" width="300" />
 			</div>
-			<div className="absolute left-3 bottom-3 lg:left-40 lg:bottom-40">
+			<div className="absolute left-3 bottom-3 lg:left-40 lg:bottom-28">
 				<Image src={"/images/Guilds.png"} height="100" width="300" />
 			</div>
 			<p style={{ fontSize: "1.2rem" }}>

@@ -1,9 +1,14 @@
+import dynamic from "next/dynamic";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
+import { batch, Fade, MoveOut, ScrollPage, Sticky } from "react-scroll-motion";
+const Animator = dynamic(
+	import("react-scroll-motion").then((it) => it.Animator),
+	{ ssr: false }
+);
+const FadeUp = batch(Fade(), MoveOut(), Sticky());
 
 function What() {
-	const [value, setValue] = useState(0);
-
 	const data = [
 		{
 			id: 1,
@@ -44,56 +49,28 @@ function What() {
 	];
 
 	return (
-		<div className="flex flex-col md:flex-row px-10 md:px-20 items-center justify-center space-y-9  h-screen">
-			<div className="self-center md:px-20">
-				<h2 className="mb-3">{data[value].head1}</h2>
-				<h1>{data[value].head2}</h1>
-				<p>{data[value].desc}</p>
-				<div className="mt-2 text-center ">
-					<Image
-						src={data[value].img}
-						alt="respct"
-						height={data[value].height ?? 300}
-						width={data[value].width ?? 500}
-						layout="intrinsic"
-					/>
-				</div>
-			</div>
-			<div className=" flex flex-row md:flex-col relative md:w-6/12 justify-center items-center p-6">
-				<Image
-					src="/images/tri.png"
-					onClick={() => setValue(0)}
-					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
-					height={100}
-					width={100}
-					alt="tri"
-				/>
-				<Image
-					src="/images/circle.png"
-					onClick={() => setValue(1)}
-					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
-					height={100}
-					width={100}
-					alt="circle"
-				/>
-				<Image
-					src="/images/square.png"
-					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
-					onClick={() => setValue(2)}
-					height={100}
-					width={100}
-					alt="square"
-				/>
-				<Image
-					src="/images/cross.png"
-					className="hover:rotate-360 hover:scale-110 hover:translate-z transform duration-1000 ease-in-out"
-					onClick={() => setValue(3)}
-					height={100}
-					width={100}
-					alt="cross"
-				/>
-			</div>
-		</div>
+		<>
+			{data.map((item, index) => (
+				<ScrollPage page={index + 1} on>
+					<Animator animation={FadeUp}>
+						<div className=" md:px-20">
+							<h2 className="mb-3">{item.head1}</h2>
+							<h1>{item.head2}</h1>
+							<p>{item.desc}</p>
+							<div className="mt-2 text-center ">
+								<Image
+									src={item.img}
+									alt="respct"
+									height={item.height ?? 300}
+									width={item.width ?? 500}
+									layout="intrinsic"
+								/>
+							</div>
+						</div>
+					</Animator>
+				</ScrollPage>
+			))}
+		</>
 	);
 }
 
