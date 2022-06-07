@@ -1,5 +1,6 @@
 import Head from "next/head";
 import React from "react";
+import Script from "next/script";
 
 const defaultImage = "https://app.respct.fun/favicon.ico";
 
@@ -37,11 +38,11 @@ const Meta = ({ title, keywords, description, url, image }) => {
 				<meta property="og:description" content={description} />
 				<meta property="og:image" content={image || defaultImage} />
 				<meta property="og:site_name" content="Respct" />
-				<script
+				<Script
 					async
 					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
 				/>
-				<script
+				<Script
 					dangerouslySetInnerHTML={{
 						__html: `
 							window.dataLayer = window.dataLayer || [];
@@ -53,7 +54,7 @@ const Meta = ({ title, keywords, description, url, image }) => {
 						`,
 					}}
 				/>
-				<script async src="https://tally.so/widgets/embed.js" />
+				<Script async src="https://tally.so/widgets/embed.js" />
 			</Head>
 		</>
 	);

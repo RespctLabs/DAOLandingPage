@@ -7,15 +7,15 @@ function IntroSection() {
 			id="mainI"
 		>
 			<span className="text-center text-7xl text-[#aaaaaa] font-bold">
-				Revolution in
+				Homepage of
 			</span>
 			<span className="font-bold pb-4 text-center text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
 				Web3 Gaming
 			</span>
 			<p className="text-center text-xs text-[#a7a7a7] my-8" id="introtxt">
-				We are a decentralized autonomous organization on a mission to
-				revolutionize gaming. Let&apos;s build the metaverse by empowering
-				people to be a part of it.
+				Onboarding Games and Gamers to the Metaverse with
+				<br />
+				Respct&apos;s Ecosystem
 			</p>
 			<button
 				data-tally-open="3lbqpo"

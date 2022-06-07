@@ -6,8 +6,142 @@
 
 html,
 body {
-	background-color: #151F2C;
+	background-color: #151f2c;
 	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+* {
+	font-family: "Mulish", sans-serif !important;
+}
+
+.backingTitle {
+	text-align: left;
+	font-weight: 700;
+	font-size: 6rem;
+	background: -webkit-linear-gradient(
+		-50deg,
+		rgba(3, 174, 208, 0.112),
+		rgba(3, 174, 208, 0.112),
+		#a658e1,
+		#a658e1,
+		rgba(3, 174, 208, 0.112),
+		rgba(3, 174, 208, 0.112)
+	);
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: "Mulish", sans-serif;
+}
+#bt {
+	margin-top: -5%;
+}
+#backingDescp {
+	text-align: left;
+	font-size: 1.2rem;
+	font-family: "Mulish", sans-serif;
+	color: #c9c9c9;
+	font-weight: 200;
+}
+
+#backingImage {
+	transform: rotate(14deg);
+	position: absolute;
+	width: 100vw;
+	left: -15vw;
+	top: -15vw;
+	height: 100vh;
+	background-image: url("/images/starsBG.png");
+	background-size: cover;
+	background-position: center;
+	mask-image: url("/images/bigF.svg");
+	mask-size: 80%;
+	mask-repeat: no-repeat;
+	background-position-x: 0;
+	animation: clip-fade 50s infinite alternate;
+}
+
+@keyframes clip-fade {
+	100% {
+		background-position: 100vh;
+	}
+}
+
+#moveLeft {
+	position: relative;
+	right: 50vw;
+	animation: moveLeft 50s linear infinite;
+}
+#moveRight {
+	position: relative;
+	left: -50vw;
+	animation: moveRight 50s linear infinite;
+}
+@keyframes moveRight {
+	100% {
+		left: -100vw;
+	}
+}
+@keyframes moveLeft {
+	100% {
+		right: -100vw;
+	}
+}
+
+h1 {
+	font-size: 6rem;
+	background-image: linear-gradient(90deg, #03afd0 5.2%, #812dc1 50%);
+	background-size: 100%;
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-moz-text-fill-color: transparent;
+	background-color: #f3ec78;
+	margin-top: -8%;
+
+	font-weight: 700;
+}
+h2 {
+	color: #ffffff;
+	font-size: 6rem;
+
+	font-family: "Mulish";
+	font-style: normal;
+	font-weight: 700;
+}
+p {
+	color: #adadad;
+	margin-top: -2%;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+#introtxt {
+	font-size: 1.2rem;
+	width: 50%;
+	line-height: 25px;
+}
+#mainI {
 	height: 100%;
 }
 
+@media only screen and (max-width: 1145px) {
+	h1 {
+		font-size: 3rem;
+	}
+	h2 {
+		font-size: 2rem;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	h1 {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1rem;
+	}
+	p {
+		font-size: 0.6rem;
+	}
+}
