@@ -8,6 +8,9 @@ module.exports = {
 			rotate: {
 				360: "360deg",
 			},
+			fontFamily: {
+				'Mulish': ['Mulish','sans-serif']
+			},
 		},
 	},
 	plugins: [],

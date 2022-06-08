@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Mulish&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -19,15 +18,15 @@ body {
 .backingTitle {
 	text-align: left;
 	font-weight: 700;
-	font-size: 6rem;
+	font-size: 5rem;
 	background: -webkit-linear-gradient(
 		-50deg,
+		rgba(3, 174, 208, 0.267),
 		rgba(3, 174, 208, 0.112),
+		#585de1,
+		#6f58e1,
 		rgba(3, 174, 208, 0.112),
-		#a658e1,
-		#a658e1,
-		rgba(3, 174, 208, 0.112),
-		rgba(3, 174, 208, 0.112)
+		rgba(3, 174, 208, 0.279)
 	);
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -38,21 +37,22 @@ body {
 }
 #backingDescp {
 	text-align: left;
-	font-size: 1.2rem;
+	font-size: 1rem;
 	font-family: "Mulish", sans-serif;
-	color: #c9c9c9;
+	color: #c9c9c9a7;
 	font-weight: 200;
+	margin-left: 2%;
+	margin-bottom: 5%;
 }
 
 #backingImage {
 	transform: rotate(14deg);
-	position: absolute;
 	width: 100vw;
 	left: -15vw;
 	top: -15vw;
 	height: 100vh;
 	background-image: url("/images/starsBG.png");
-	background-size: cover;
+	background-size: 50%;
 	background-position: center;
 	mask-image: url("/images/bigF.svg");
 	mask-size: 80%;
@@ -69,22 +69,22 @@ body {
 
 #moveLeft {
 	position: relative;
-	right: 50vw;
+	left:-20%;
 	animation: moveLeft 50s linear infinite;
 }
 #moveRight {
 	position: relative;
-	left: -50vw;
+	left: -260%;
 	animation: moveRight 50s linear infinite;
 }
 @keyframes moveRight {
 	100% {
-		left: -100vw;
+		left: -100%;
 	}
 }
 @keyframes moveLeft {
 	100% {
-		right: -100vw;
+		left: -100%;
 	}
 }
 
@@ -113,7 +113,8 @@ p {
 	color: #adadad;
 	margin-top: -2%;
 	font-size: 1.2rem;
-	font-weight: 300;
+	font-family: 'Mulish', sans-serif;
+	font-weight: 200;
 }
 
 #introtxt {
@@ -144,4 +145,31 @@ p {
 	p {
 		font-size: 0.6rem;
 	}
+}
+
+
+.parallax-effect{
+	position: relative;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+	height: screen;
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.inner-element {
+	position: absolute;
+    transform: translateZ(40px) scale(0.8);
+  }
+
+#gradient{
+	background-image: linear-gradient(45deg,#00D6FF,#EB00FF);
+	background-size: 150% 20%;
+}
+#gradient:hover {
+	
+	background-position: 100% 0;
+    transition: all .7s ease-in-out;
 }
