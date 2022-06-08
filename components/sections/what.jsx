@@ -74,7 +74,11 @@ function What() {
 						</div>
 				))}
 				<ParallaxLayer sticky={{ start: 0, end: 4 }}>
-								<img src={"/images/buttons.png"} className=" absolute  md:w-5/12 right-0 top-7  items-center p-6 "/>
+									
+
+				
+								
+									
                 </ParallaxLayer>
             </Parallax>
 		</>
