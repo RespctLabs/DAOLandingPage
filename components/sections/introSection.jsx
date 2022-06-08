@@ -1,12 +1,20 @@
 import React from "react";
 import Tilt from 'react-parallax-tilt';
 
+
+
+
+
+
+
 function IntroSection() {
 	return (
 		<div
 			className="flex items-center flex-col justify-center h-[100vh] overflow-hidden bg-[#17181e]"
 			id="mainI"
 		>
+			
+			
 			<Tilt className="parallax-effect bg-url('/images/controller.png') "
 				tiltMaxAngleX={10}
 				tiltMaxAngleY={10}

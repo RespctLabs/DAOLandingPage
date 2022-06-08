@@ -5,7 +5,8 @@ import NavBar from "../components/navbar.jsx";
 import BackingSection from "../components/sections/backingSection.jsx";
 import IntroSection from "../components/sections/introSection.jsx";
 import TrustSection from "../components/sections/trustSection.jsx";
-import WhatSection from "../components/sections/what.jsx";
+
+import WhatSection from "../components/sections/whats.jsx";
 
 function Index() {
 	return (
@@ -33,9 +34,14 @@ function Index() {
 					<div className="h-screen overflow-hidden">
 						<IntroSection />
 					</div>
-					<div className="h-screen overflow-hidden">
-						<WhatSection/>
+					<div className="h-[280vh] overflow-hidden">
+						<WhatSection />
+						
 					</div>
+					{/* <div className="h-screen overflow-hidden">
+						
+					</div> */}
+					
 					<div className="h-screen overflow-hidden">
 						<TrustSection />
 					</div>
