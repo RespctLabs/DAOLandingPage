@@ -5,28 +5,51 @@ import NavBar from "../components/navbar.jsx";
 import BackingSection from "../components/sections/backingSection.jsx";
 import IntroSection from "../components/sections/introSection.jsx";
 import TrustSection from "../components/sections/trustSection.jsx";
-import WhatSection from "../components/sections/whatSection.jsx";
+
+import WhatSection from "../components/sections/whats.jsx";
 
 function Index() {
 	return (
 		<>
 			{typeof window !== "undefined" && (
-				<ScrollContainer>
-					<NavBar />
-					<ScrollPage page="0">
+				
+				// <ScrollContainer>
+				// 	<NavBar />
+				// 	<ScrollPage page="0">
+				// 		<IntroSection />
+				// 	</ScrollPage>
+
+				// 	<WhatSection />
+
+				// 	<ScrollPage page="5">
+				// 		<TrustSection />
+				// 	</ScrollPage>
+				// 	<ScrollPage page="6">
+				// 		<BackingSection />
+				// 	</ScrollPage>
+				// 	<Footer />
+				// </ScrollContainer>
+				<>
+					<NavBar/>
+					<div className="h-screen overflow-hidden">
 						<IntroSection />
-					</ScrollPage>
-
-					<WhatSection />
-
-					<ScrollPage page="5">
+					</div>
+					<div className="h-[280vh] overflow-hidden">
+						<WhatSection />
+						
+					</div>
+					{/* <div className="h-screen overflow-hidden">
+						
+					</div> */}
+					
+					<div className="h-screen overflow-hidden">
 						<TrustSection />
-					</ScrollPage>
-					<ScrollPage page="6">
+					</div>
+					<div className="h-screen overflow-hidden">
 						<BackingSection />
-					</ScrollPage>
-					<Footer />
-				</ScrollContainer>
+					</div>
+					<Footer/>
+				</>
 			)}
 		</>
 	);
