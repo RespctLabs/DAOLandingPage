@@ -12,7 +12,6 @@ function Index() {
 	return (
 		<>
 			{typeof window !== "undefined" && (
-				
 				// <ScrollContainer>
 				// 	<NavBar />
 				// 	<ScrollPage page="0">
@@ -30,25 +29,24 @@ function Index() {
 				// 	<Footer />
 				// </ScrollContainer>
 				<>
-					<NavBar/>
+					<NavBar />
 					<div className="h-screen overflow-hidden">
 						<IntroSection />
 					</div>
 					<div className="h-[280vh] overflow-hidden">
 						<WhatSection />
-						
 					</div>
 					{/* <div className="h-screen overflow-hidden">
 						
 					</div> */}
-					
+
 					<div className="h-screen overflow-hidden">
 						<TrustSection />
 					</div>
 					<div className="h-screen overflow-hidden">
 						<BackingSection />
 					</div>
-					<Footer/>
+					<Footer />
 				</>
 			)}
 		</>
