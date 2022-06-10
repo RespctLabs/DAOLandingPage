@@ -6,8 +6,8 @@ function whats() {
 			<div className=" text-7xl text-[#aaaaaa]  text-center my-20 z-10">
 				Our Offerings
 			</div>
-			<div className="flex flex-col h-[66.66%] items-center justify-center">
-				<div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center mt-40">
+			<div className="flex flex-col  items-center justify-center">
+				<div className="grid grid-cols-1 md:grid-cols-2 items-center justify-center ">
 					<div className="w-full h-full  overflow-hidden bg-[#17181e]  ">
 						<iframe
 							src="https://my.spline.design/untitled-277535cee14ae47e52e10ea156e8e816/"
