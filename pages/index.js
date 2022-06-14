@@ -33,7 +33,7 @@ function Index() {
 					<div className="h-screen overflow-hidden">
 						<IntroSection />
 					</div>
-					<div className="h-[280vh] overflow-hidden">
+					<div className="h-max overflow-hidden">
 						<WhatSection />
 					</div>
 					{/* <div className="h-screen overflow-hidden">

@@ -2,7 +2,7 @@ import Head from "next/head";
 import React from "react";
 import Script from "next/script";
 
-const defaultImage = "https://app.respct.fun/favicon.ico";
+const defaultImage = "https://respct.co/favicon.ico";
 
 const Meta = ({ title, keywords, description, url, image }) => {
 	return (
@@ -63,8 +63,8 @@ const Meta = ({ title, keywords, description, url, image }) => {
 Meta.defaultProps = {
 	title: "Respct",
 	keywords: "respct, creators, artists",
-	description: "",
-	url: "https://respct.fun/",
+	description: "Revolution in Web3 Gaming",
+	url: "https://respct.co/",
 	image: defaultImage,
 };
 
