@@ -15,7 +15,7 @@ function trustSection() {
 				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
 				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
 			</div>
-			<div className="absolute right-3 md:top-[13%] top-[10%] w-1/2 md:w-max">
+			<div className="absolute right-3 md:top-[13%] top-[7%] w-1/2 md:w-max">
 				<Image src={"/images/Games.png"} height="100" width="400" />
 			</div>
 			<div className=" flex flex-col p-3 font-bold pb-4 text-center text-5xl md:text-7xl bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-violet-800">
@@ -51,7 +51,7 @@ function trustSection() {
 				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
 				<img src={"/images/panel.png"} style={{ marginRight: "3%" }} />
 			</div>
-			<div className="absolute left-3 bottom-[2%] md:bottom-[13%] bottom-[10%] w-1/2 md:w-max">
+			<div className="absolute left-3 bottom-[2%] md:bottom-[13%] bottom-[7%] w-1/2 md:w-max">
 				<Image src={"/images/Guilds.png"} height="100%" width="400%" />
 			</div>
 		</div>

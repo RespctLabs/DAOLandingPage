@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 function Backing() {
 	return (
-		<div className="relative h-screen overflow-hidden">
+		<div className="relative h-screen overflow-hidden ">
 			<div id="backingImage" className="absolute -z-30" />
 			<div className="flex flex-col md:flex-row justify-evenly backdrop-blur-sm p-6 overflow-hidden  h-full items-center ">
 				<div className=" md:px-40">
@@ -13,7 +13,8 @@ function Backing() {
 						<br />
 						but believers of what we do, 
 						<br />
-						and how we aim to change the ecosystem become the part of the change.
+						and how we aim to change the ecosystem and
+						<br/>become the part of the change.
 					</p>
 				</div>
 				<div className="flex flex-col justify-around flex-wrap  md:h-full  text-center items-center mb-10">
