@@ -62,8 +62,8 @@ const Meta = ({ title, keywords, description, url, image }) => {
 
 Meta.defaultProps = {
 	title: "Respct",
-	keywords: "respct, creators, artists",
-	description: "Revolution in Web3 Gaming",
+	keywords: "respct, gamers, games",
+	description: "Unified gamer tag for web3",
 	url: "https://respct.co/",
 	image: defaultImage,
 };
