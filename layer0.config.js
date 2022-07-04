@@ -3,11 +3,11 @@
 module.exports = {
 	connector: "@layer0/next",
 	team: "respct",
-	name: "landing.respct.fun",
+	name: "respct.co",
 	backends: {
 		origin: {
-			domainOrIp: "layer0-origin-landing.respct.fun",
-			hostHeader: "landing.respct.fun",
+			domainOrIp: "layer0-origin.respct.co",
+			hostHeader: "respct.co",
 		},
 	},
 };
