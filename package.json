@@ -12,6 +12,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@layer0/rum": "^3.1.0",
     "@react-spring/parallax": "^9.4.5",
     "classnames": "^2.3.1",
     "next": "12.1.0",
